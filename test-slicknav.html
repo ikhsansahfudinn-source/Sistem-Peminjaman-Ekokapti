@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test SlickNav Hover Effects</title>
+    
+    <!-- Load Bootstrap & Font Awesome -->
+    <link rel="stylesheet" href="assets/assets_shop/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/assets_shop/css/font-awesome.min.css">
+    
+    <!-- Load SlickNav CSS -->
+    <link rel="stylesheet" href="assets/assets_shop/css/slicknav.min.css">
+    <link rel="stylesheet" href="assets/assets_shop/css/custom-slicknav.css">
+    
+    <style>
+        body {
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #header-bottom {
+            position: relative;
+            padding: 20px 0;
+            background-color: #333;
+            margin-bottom: 50px;
+        }
+        
+        .mainmenu {
+            display: none;
+        }
+        
+        .test-controls {
+            margin: 30px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .test-controls h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffd000;
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #ffb100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SlickNav Menu Hover Test</h1>
+        <p>Hover over the menu items to test the immediate background color change effect.</p>
+        
+        <div id="header-bottom">
+            <div class="container">
+                <!-- This is the menu that will be turned into SlickNav -->
+                <ul class="mainmenu">
+                    <li><a href="#">Beranda</a></li>
+                    <li>
+                        <a href="#">Barang</a>
+                        <ul>
+                            <li><a href="#">Kategori Barang</a></li>
+                            <li><a href="#">Data Barang</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Transaksi</a>
+                        <ul>
+                            <li><a href="#">Peminjaman Barang</a></li>
+                            <li><a href="#">Pengembalian Barang</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">LOGOUT</a></li>
+                    <li><a href="#">Halo User</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="test-controls">
+            <h3>Testing Controls</h3>
+            <button class="btn" id="toggleMenu">Toggle Menu</button>
+            <button class="btn" id="triggerHover">Trigger Hover Effect</button>
+        </div>
+    </div>
+    
+    <!-- Load jQuery -->
+    <script src="assets/assets_shop/js/jquery.min.js"></script>
+    
+    <!-- Load SlickNav JS -->
+    <script src="assets/assets_shop/js/jquery.slicknav.min.js"></script>
+    <script src="assets/assets_shop/js/custom-slicknav.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Additional testing code
+            $('#toggleMenu').on('click', function() {
+                $('.slicknav_btn').trigger('click');
+            });
+            
+            $('#triggerHover').on('click', function() {
+                // Cycle through all menu items with hover effect
+                const menuItems = $('.slicknav_nav a');
+                let i = 0;
+                
+                const interval = setInterval(function() {
+                    // Remove hover from all
+                    menuItems.removeClass('hover-active');
+                    
+                    // Add hover to current
+                    $(menuItems[i]).addClass('hover-active');
+                    
+                    i++;
+                    if (i >= menuItems.length) {
+                        clearInterval(interval);
+                        
+                        // Remove all hover after finished
+                        setTimeout(function() {
+                            menuItems.removeClass('hover-active');
+                        }, 500);
+                    }
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html> 
