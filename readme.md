@@ -1,37 +1,47 @@
-<h2 align="center">Marketplace Rental Mobil (CodeIgniter 3)</h2>
+<h2 align="center">Sistem Informasi Peminjaman Perkakas Karang Taruna Dusun Ngrandu</h2>
 
-Aplikasi marketplace rental mobil menggunakan framework CodeIgniter 3. Dengan multi user (admin, pemilik rental dan kustomer). 
-
------
-
-#### Screenshot aplikasi (dalam GIF)
-##### Kustomer
-<p align="center">
-  <img src="https://raw.githubusercontent.com/idnorman/marketplace-rental-mobil-codeigniter3/master/customer.gif">
-</p> 
-
-##### Pemilik Rental
-<p align="center">
-  <img src="https://raw.githubusercontent.com/idnorman/marketplace-rental-mobil-codeigniter3/master/owner%20rental.gif">
-</p>
-
-##### Admin
-<p align="center">
-  <img src="https://raw.githubusercontent.com/idnorman/marketplace-rental-mobil-codeigniter3/master/admin.gif">
-</p>
+Aplikasi sistem informasi penyewaan/peminjaman perkakas berbasis web yang dibangun menggunakan **Framework CodeIgniter 3** dan **Bootstrap 5**.  
+Sistem ini dirancang untuk mempermudah proses administrasi peminjaman alat-alat milik Karang Taruna Dusun Ngrandu secara digital dan terintegrasi.
 
 -----
 
-#### Built With
-- [PHP Framework CodeIgniter 3 ](https://codeigniter.com/ "PHP Framework CodeIgniter 3 ")
+#### 🔧 Fitur Utama
+- **Multi User**: Admin dan Anggota/Peminjam
+- **Manajemen Data Perkakas** (tambah, edit, hapus, pencarian)
+- **Transaksi Peminjaman dan Pengembalian**
+- **Laporan Peminjaman dan Riwayat Transaksi**
+- **Validasi Status Perkakas (tersedia / dipinjam)**
+- **Tampilan Responsif menggunakan Bootstrap**
+
+-----
+
+#### 💻 Tampilan Aplikasi
+##### Beranda
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/screenshots/beranda.png" width="600">
+</p>
+
+##### Data Perkakas
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/screenshots/data-perkakas.png" width="600">
+</p>
+
+##### Transaksi Peminjaman
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/screenshots/peminjaman.png" width="600">
+</p>
+
+-----
+
+#### 🧱 Dibangun Dengan
+- [PHP Framework CodeIgniter 3](https://codeigniter.com/ "PHP Framework CodeIgniter 3")
+- [Bootstrap 5 (Frontend Framework)](https://getbootstrap.com/ "Bootstrap 5")
 - [MySQL Database](https://www.mysql.com/ "MySQL Database")
-- [Cardoor HTML Template (Frontend)](https://bootstrap4.com/cardoor-car-rental-html-template/ "Cardoor HTML Template (Frontend)")
-- [Stisla Admin Template](https://getstisla.com/ "Stisla Admin Template")
------
-#### Instalasi
-Download/clone repository, kemudian import database **rental-mobil.sql**, selesai
+- [Font Awesome & DataTables Plugin](https://datatables.net/)
 
 -----
 
-#### Note
-Masih terdapat kekurangan, feel free to edit 😆 😆 😆
+#### ⚙️ Instalasi
+1. Download atau clone repository ini  
+   ```bash
+   git clone https://github.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti.git
