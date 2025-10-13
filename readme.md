@@ -16,20 +16,22 @@ Sistem ini dirancang untuk mempermudah proses administrasi peminjaman alat-alat 
 -----
 
 #### 💻 Tampilan Aplikasi
-##### Beranda
+
+##### Login
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/screenshots/beranda.png" width="600">
+  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/login.gif" width="600">
 </p>
 
-##### Data Perkakas
+##### Dashboard Admin
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/screenshots/data-perkakas.png" width="600">
+  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/dashboard%20admin.gif" width="600">
 </p>
 
-##### Transaksi Peminjaman
+##### Dashboard User
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/screenshots/peminjaman.png" width="600">
+  <img src="https://raw.githubusercontent.com/ikhsansahfudinn-source/Sistem-Peminjaman-Ekokapti/main/dashboard%20user.gif" width="600">
 </p>
+
 
 -----
 
